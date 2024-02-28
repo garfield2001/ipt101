@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,14,154,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    }
+    
+    *{ 
+    font-family: Bold;
+    box-sizing: border-box;
+    }
+    form {
+        border-radius: 20px;
+        margin-top: 150px !important;
+        width: 24% !important;
+        background-color: white !important;
+        padding: 50px;
+    }
+    .btn-primary{
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(75,14,154,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    h2{
+    text-align: center;
+    margin-bottom: 40px;
+    }   
+    .form-control{
+        color: rgba(0,0,0,.87);
+        border-bottom-color: rgba(0,0,0,.42);
+        box-shadow: none !important;
+        border: none;
+        border-bottom: 1px solid;
+        border-radius: 4px 4px 0 0;
+        }
+    h3{
+        text-align: end;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    h4{
+        text-align: center;
+        font-size: 2rem !important;
+            font-weight: 700;
+    }
+    h5{
+      text-align: left;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    input{
+    display: 40px;
+    }
+    
+    input {
+    display: block;
+    border: 2px solid #020202;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    }
+    
+    label {
+    float: left;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+    }
+    button {
+    float: center;
+    background: rgb(35, 174, 202);
+    padding: 15px 10px;
+    color: #000000;
+    height: -40px;
+    width: 100%;
+    border-radius: 15px;
+    margin-right: 120px;
+    border: none;
+    text-decoration: none;
+    }
+    
+    button:hover{
+    opacity: .10;
+    }
+    
+    .error {
+    background: #000000;
+    color: #800d0d;
+    padding: 10px;
+    width:95%;
+    border-radius: 5px;
+    margin: 20px auto;
+    }
+    
+    h1{
+    text-align: center;
+    color: rgb(35, 174, 202);
+    }
+    
+    a {
+    float:center;
+    padding: 15px 10px;
+    height: -40px;
+    width: 80%;
+    border-radius: 110px;
+    margin-right: 110px;
+    border: none;
+    text-decoration: none;
+    }
+  
+    
+     
+    a:hover{
+    
+    opacity: .7;
+    
+    }
+  
