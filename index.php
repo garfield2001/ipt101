@@ -11,7 +11,6 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
     }
     $uname = validate($_POST['uname']);
     $pass = validate($_POST['password']);
-
     if (empty($uname)) {
         header("Location:loginform.php?error=User Name is required");
         exit();
@@ -23,14 +22,15 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
         $result = mysqli_query($conn, $sql);
         if (mysqli_num_rows($result) === 1) {
             $row = mysqli_fetch_assoc($result);
-            if ($row['username'] === $uname && $row['password'] === $pass) {
-                echo "Logged in!";
-                $_SESSION['username'] = $row['username'];
-                $_SESSION['name'] = $row['name'];
-                $_SESSION['id'] = $row['id'];
-                header("Location: home.php");
-                exit();
-            }else{
+            // Check if username and password match
+if ($row['username'] === $username && password_verify($password, $row['password'])) {
+    echo "Logged in!";
+    $_SESSION['user_id'] = $row['id'];
+    $_SESSION['username'] = $username;
+    // Redirect user to home page
+    header("Location: home.php");
+    exit();
+    } else {
                 header("Location: loginform.php?error=Incorect User name or password");
                 exit();
             }

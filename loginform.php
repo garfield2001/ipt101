@@ -18,24 +18,22 @@
         <?php if (isset($_GET['error'])) { ?>
             <p class="error"><?php echo $_GET['error']; ?></p>
         <?php } ?>
+        
         <label>User Name</label>
-        <input type="text" name="uname" placeholder="User Name" required><br>
+        <input type="text" name="uname" placeholder="UserName" required><br>
         <label>Password</label>
         <input type="password" name="password" placeholder="Password" required><br>
         <button type="submit" class="btn btn-primary mt-5">Login</button>
         </div>
-
-<div class="rememberMe-forgotPassword">
-    <label><input type="checkbox">Remember me</label>
-</div>
 <div class="links">
-<h4> <a href="forgotpass.php">Forgot password?</a>
 </form>
-
 <div class="links">
-<h3> Not sign up yet? <a href="signup.php">SignUp</a>
+<h3> Not sign up yet? <a href="registrationform.php">SignUp</a>
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </form> 
 </body>
+
+
+
